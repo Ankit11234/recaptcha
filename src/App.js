@@ -7,6 +7,7 @@ function App() {
   const [arr, setArr] = useState([]);
   const [s, setS] = useState('');
   const [input, setInput] = useState('');
+  
 
   const addTodo = (event) => {
     event.preventDefault();
@@ -16,13 +17,16 @@ function App() {
       arr[i] = todos[j];
       j++;
     }     
+
     setInput('');
 
   }
+ 
+  let ans=[...new Set(arr)];
+  
+  const search=arr.filter(i=>i.toLowerCase()===input.toLowerCase());
 
-  const search = arr.filter(i => i.toLowerCase() === input.toLowerCase());
-  useEffect(() => {
-
+  useEffect(() => { 
     setS(search);
   }, [input]);
 
@@ -42,7 +46,7 @@ function App() {
               <li><h1>{i}</h1></li>
             ))
             :
-            arr.map(i => (
+            ans.map(i => (
               <li><h1>{i}</h1></li>
             ))
         }
