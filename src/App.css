@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+body{
+  background-color: darksalmon;
+}
+
+input {
+  outline: none;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+button{
+  cursor: pointer;
+  padding: 7px;
+    width: 65px;
+    border-radius: 15px;
+    margin: 4px;
+}
+
+li {
+  list-style: none;
+}
