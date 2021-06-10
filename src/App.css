@@ -1,26 +1,13 @@
 .App {
-  text-align: center;
-  color: white;
+  display: grid;
+  place-items: center;
 }
 
-body{
-  background-color: darksalmon;
-}
-
-input {
-  outline: none;
-  padding: 6px;
-  border-radius: 10px;
+input{
+  margin: 20px 0px;
 }
 
 button{
-  cursor: pointer;
-  padding: 7px;
-    width: 65px;
-    border-radius: 15px;
-    margin: 4px;
+  margin: 20px 0px;
 }
 
-li {
-  list-style: none;
-}
