@@ -1,7 +1,7 @@
 {
   "name": "six-app",
   "version": "0.1.0",
-  "homepage": "http://Ankit11234.github.io/recaptcha",
+  "homepage": "http://ankit11234.github.io/recaptcha",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
